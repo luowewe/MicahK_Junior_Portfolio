@@ -68,7 +68,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Welcome To<br>My Junior <span class="home__title-color">Portfolio</span><br><span class="typed" data-typed-items="Designer, Developer, Coder, Crocheter"></span></h1>
+                    <h1 class="home__title">Welcome To<br>My <span class="home__title-color">Junior Portfolio</span><br><span class="typed" data-typed-items="Designer, Developer, Coder, Crocheter"></span></h1>
 
                     <!--<a href="#contact" class="button">Contact</a>-->
                 </div>
@@ -198,10 +198,10 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <form method="post" action="process_form.php" class="contact__form">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" cols="0" rows="10" class="contact__input" required></textarea>
                         <input type="button" value="Send" class="contact__button button">
                     </form>
                 </div>
