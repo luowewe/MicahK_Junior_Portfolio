@@ -313,10 +313,16 @@ img{
   border-radius: .5rem;
   overflow: hidden;
 }
-.work__img img,iframe{
+.work__img img{
   transition: 1s;
   cursor: pointer;
 }
+
+.work__img iframe{
+    transition: 1s;
+    cursor: pointer;
+  }
+
 .work__img img:hover{
   transform: scale(1.1);
 }
