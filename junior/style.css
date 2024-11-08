@@ -102,11 +102,11 @@ img{
 
 /*===== LAYOUT =====*/
 .bd-grid{
-  max-width: 1024px;
+  /*max-width: 1024px;*/
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 2rem;
-  width: calc(100% - 2rem);
+  width: 95%;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
@@ -415,7 +415,7 @@ img{
   }
   .home__img{
     width: 457px;
-    bottom: 15%;
+    bottom: 40%;
   }
 
   .about__container, .skills__container{
@@ -447,4 +447,8 @@ img{
   .home__img{
     right: 10%;
   }
+}
+
+nav .nav .bd-grid{
+    margin-left: 4%;
 }
