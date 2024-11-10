@@ -318,7 +318,7 @@ img{
   cursor: pointer;
 }
 
-.work__img iframe{
+.work__img button{
     transition: 1s;
     cursor: pointer;
   }
@@ -327,7 +327,7 @@ img{
   transform: scale(1.1);
 }
 
-.work__img iframe:hover{
+.work__img button:hover{
     transform: scale(1.1);
   }
 
