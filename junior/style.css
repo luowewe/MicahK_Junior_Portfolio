@@ -478,3 +478,28 @@ nav .nav .bd-grid{
     border-radius: 5px;
     text-align: center;
 }
+
+img.cc-icon {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.creator-info {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.cc-icon:hover + .creator-info {
+    display: block;
+}
