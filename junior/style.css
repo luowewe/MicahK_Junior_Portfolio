@@ -481,19 +481,18 @@ nav .nav .bd-grid{
 
 img.cc-icon {
     position: absolute;
-    top: 15px;
+    top: 80%;
     right: 10px;
     width: 30px;
     height: 30px;
     cursor: pointer;
-    z-index: 1000;
 }
 
 .creator-info {
     display: none;
     position: absolute;
-    top: 40px;
-    right: 10px;
+    top: 80%;
+    right: 12%;
     color: white;
     padding: 5px;
     border-radius: 5px;
