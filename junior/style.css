@@ -481,7 +481,7 @@ nav .nav .bd-grid{
 
 img.cc-icon {
     position: absolute;
-    top: 80%;
+    top: 88%;
     right: 10px;
     width: 30px;
     height: 30px;
@@ -491,7 +491,7 @@ img.cc-icon {
 .creator-info {
     display: none;
     position: absolute;
-    top: 80%;
+    top: 88%;
     right: 12%;
     color: white;
     padding: 5px;
