@@ -502,3 +502,7 @@ img.cc-icon {
 .cc-icon:hover + .creator-info {
     display: block;
 }
+
+a.typewrite {
+    color: #6c62de;
+}
