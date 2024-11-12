@@ -312,13 +312,14 @@ img{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   border-radius: .5rem;
   overflow: hidden;
+  height:300px;
 }
 .work__img img{
   transition: 1s;
   cursor: pointer;
 }
 
-.work__img button{
+.work__img button.btn{
     transition: 1s;
     cursor: pointer;
   }
@@ -327,7 +328,7 @@ img{
   transform: scale(1.1);
 }
 
-.work__img button:hover{
+.work__img button.btn:hover{
     transform: scale(1.1);
   }
 
