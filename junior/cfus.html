@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="Kennedy Productions Logo.png">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://code.jquery.com/jquery-3.2.0.slim.min.js"></script>
+        <script>
+        $(function(){
+            $(".sneak").click(function(){
+                $(this).parent().toggleClass("big");
+            })
+        })
+        function submitForm() {
+        document.contact-form.submit();
+        document.contact-form.reset();
+        }
+            
+        </script>
+        <style>
+            .work__container div
+            {
+                /*position: relative;
+                width: 200px;
+                height: 200px;
+                background: red;
+                color: white;
+                top: 100px;
+                left: 400px;
+                text-align:center;*/
+                transition: all 1s ;
+                
+            }
+            .big
+            {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 1000;
+                background-color: white;
+            }
+        </style>
+        <title>Kennedy Productions | Junior</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="" class="nav__logo">Kennedy Portfolio</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html/#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="" class="nav__link active">CFUs</a></li>
+                        <li class="nav__item"><a href="assign.html" class="nav__link">Assignments</a></li>
+                        <li class="nav__item"><a href="notes.html" class="nav__link">Notebooks</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Checks For Understanding</h1>
+                    <h2 style="font-size:1.5em">
+                      These are practices we do to make sure we understand the lessons.
+                    </h1>
+                    <!--<a href="#contact" class="button">Contact</a>-->
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img" id="target">
+                        <iframe src="https://py3.codeskulptor.org/#user309_Sa3Sf7EBuz_0.py" width="100%" height="100%"></iframe>
+                        <button class="sneak btn"><i class='bx bx-search-alt'></i></button>
+                    </div>
+                    <div class="work__img">
+                        <iframe src="https://py3.codeskulptor.org/#user309_INhXRMH372_0.py" width="100%" height="100%"></iframe>
+                        <button class="sneak btn"><i class='bx bx-search-alt'></i></button>
+                    </div>
+                    <div class="work__img">
+                        <iframe src="https://py3.codeskulptor.org/#user309_INhXRMH372_1.py" width="100%" height="100%"></iframe>
+                        <button class="sneak btn"><i class='bx bx-search-alt'></i></button>
+                    </div>
+                    <div class="work__img">
+                        <iframe src="https://py3.codeskulptor.org/#user309_INhXRMH372_2.py" width="100%" height="100%"></iframe>
+                        <button class="sneak btn"><i class='bx bx-search-alt'></i></button>
+                    </div>
+                    <div class="work__img">
+                        <iframe src="https://py3.codeskulptor.org/#user309_INhXRMH372_3.py" width="100%" height="100%"></iframe>
+                        <button class="sneak btn"><i class='bx bx-search-alt'></i></button>
+                    </div>
+                    <div class="work__img">
+                        <iframe src="https://py3.codeskulptor.org/#user309_INhXRMH372_4.py" width="100%" height="100%"></iframe>
+                        <button class="sneak btn"><i class='bx bx-search-alt'></i></button>
+                    </div>
+                </div>
+            </section>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Micah</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2024 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+        <script>
+            var TxtType = function(el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+            };
+            
+            TxtType.prototype.tick = function() {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
+            
+                if (this.isDeleting) {
+                    this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                    this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+            
+                this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+            
+                var that = this;
+                var delta = 200 - Math.random() * 100;
+            
+                if (this.isDeleting) { delta /= 2; }
+            
+                if (!this.isDeleting && this.txt === fullTxt) {
+                    delta = this.period;
+                    this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                    this.isDeleting = false;
+                    this.loopNum++;
+                    delta = 500;
+                }
+            
+                setTimeout(function() {
+                    that.tick();
+                }, delta);
+            };
+            
+            window.onload = function() {
+                var elements = document.getElementsByClassName('typewrite');
+                for (var i=0; i<elements.length; i++) {
+                    var toRotate = elements[i].getAttribute('data-type');
+                    var period = elements[i].getAttribute('data-period');
+                    if (toRotate) {
+                      new TxtType(elements[i], JSON.parse(toRotate), period);
+                    }
+                }
+                // INJECT CSS
+                var css = document.createElement("style");
+                css.type = "text/css";
+                css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff; animation: blink-caret 0.75s step-end infinite;}";
+                css.innerHTML += "@keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #000; } }";
+                document.body.appendChild(css);
+            };
+        </script>
+    </body>
+</html>
